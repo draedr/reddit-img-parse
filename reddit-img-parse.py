@@ -8,7 +8,7 @@ from sys import platform
 import click
 import logging
 
-version = "0.1.0"
+version = "0.2.0"
 author = "Draedr"
 logger = logging.getLogger(__name__)
 
