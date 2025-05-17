@@ -7,9 +7,8 @@ import shutil
 from sys import platform
 import click
 import logging
+from version import __version__
 
-version = "0.2.0"
-author = "Draedr"
 logger = logging.getLogger(__name__)
 
 def url_extraction(url):
@@ -123,7 +122,7 @@ def open_output(output_folder):
         exit()
 
 @click.command(epilog="Code available at https://github.com/draedr/reddit-img-parse")
-@click.version_option(version=version, prog_name="reddit-img-parse", message="%(prog)s version %(version)s")
+@click.version_option(version=__version__, prog_name="reddit-img-parse", message="%(prog)s version %(version)s")
 @click.argument('url')
 @click.option('--output_folder', default='', help='Output folder for downloaded images (A new folder will be created inside of it). By deafult, the current working directory will be used.')
 @click.option('--enumerate', default=False, help='Prefix the filenames with their index. Default is False.')
