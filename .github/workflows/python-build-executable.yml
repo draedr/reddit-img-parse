@@ -23,7 +23,7 @@ jobs:
         # the dist path
         #dist: # optional, default is ./dist
         # the version of python
-        python_version: 3.13 # optional, default is 3.9
+        # python_version: 3.13 # optional, default is 3.9
         # the version of pyinstaller
         #pyinstaller_version: # optional, default is 6.7
         # the output exe name
