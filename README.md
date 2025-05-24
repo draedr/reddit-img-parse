@@ -1,4 +1,4 @@
-Usage: reddit-img-parse.py [OPTIONS] URL
+Usage: rip.py [OPTIONS] URL
 
   A python script to download images from a Reddit post with a gallery.
 
